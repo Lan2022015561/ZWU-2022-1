@@ -38,15 +38,18 @@
     }
 
     .content {
-        padding-top: 60px;
+        padding-top: 60px; /* Adjust top padding to accommodate fixed navbar */
+        display: flex;
+        justify-content: center;
     }
 
     .section {
         background-color: rgba(68, 68, 68, 0.9);
-        margin: 20px auto;
+        margin: 20px;
         padding: 20px;
         border-radius: 8px;
-        max-width: 800px;
+        width: 90%; /* Adjust width for overall enlargement */
+        max-width: 1200px; /* Optional: Set a max-width for very wide screens */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
@@ -56,21 +59,19 @@
 
     .section p {
         color: #ddd;
-        margin: 10px 0;
     }
 
     .image-row {
         display: flex;
+        justify-content: space-between;
+        align-items: center; /* This ensures that images are vertically aligned */
         flex-wrap: wrap;
-        justify-content: space-around;
-        margin-bottom: 20px;
     }
 
     .image-row img {
-        width: auto; /* Adjust image width as needed */
-        max-width: 45%; /* Maximum width for images */
-        height: auto; /* Adjust image height as needed */
-        margin: 5px;
+        width: 48%; /* Adjust width to manage space between images */
+        height: auto;
+        margin: 10px 0; /* Adjust margin for vertical spacing */
         border-radius: 8px;
     }
 </style>
@@ -89,7 +90,6 @@
 </div>
 
 <div class="content">
-    <!-- Section 1 -->
     <div class="section">
         <h3>团队创建</h3>
         <div class="image-row">
@@ -102,24 +102,7 @@
         </div>
         <p>描述团队创建的过程和目的。</p>
     </div>
-
-    <!-- Section 2 -->
-    <!-- ... -->
-    <!-- Repeat the structure for each section, adding the appropriate images and text. -->
-
-    <!-- Section 7 -->
-    <div class="section">
-        <h3>本地文件上传</h3>
-        <div class="image-row">
-            <img src="path-to-your-image25.jpg" alt="Image 25">
-            <img src="path-to-your-image26.jpg" alt="Image 26">
-        </div>
-        <div class="image-row">
-            <img src="path-to-your-image27.jpg" alt="Image 27">
-            <img src="path-to-your-image28.jpg" alt="Image 28">
-        </div>
-        <p>描述如何将本地文件上传到云端仓库的方法。</p>
-    </div>
+    <!-- Repeat similar structure for other sections -->
 </div>
 
 </body>
