@@ -43,24 +43,29 @@
     }
 
     .member-info {
-        width: 80%;
-        max-width: 400px;
+        width: 90%; /* 放大中间内容的宽度 */
+        max-width: 600px; /* 或者你希望的最大宽度 */
         margin: auto;
         background-color: #fff;
-        padding: 20px;
+        padding: 40px; /* 增加内边距 */
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         opacity: 0;
         transform: translateY(20px);
         animation: fadeInUp 1s ease forwards;
         animation-delay: 0.5s;
+        text-align: left; /* 文字左对齐 */
     }
 
     .member-info img {
-        width: 150px;
-        height: 150px;
+        width: 200px; /* 放大照片 */
+        height: 200px; /* 放大照片 */
         border-radius: 50%;
         margin-bottom: 20px;
+    }
+
+    .member-info h2, .member-info p {
+        font-weight: bold; /* 加粗字体 */
     }
 
     @keyframes fadeInUp {
@@ -85,7 +90,7 @@
 </div>
 
 <div class="member-info">
-    <img src="image/10add63b19d640bcb11647bfcb07538.jpg"团队成员1照片">
+    <img src="image/10add63b19d640bcb11647bfcb07538.jpg" alt="团队成员1照片">
     <h2>姓名：张三</h2>
     <p>学号：1234567890</p>
     <p>个人简介：张三是BSST团队的一员，专注于前端开发和用户体验设计。</p>
