@@ -8,8 +8,10 @@
     body {
         margin: 0;
         font-family: 'Arial', sans-serif;
-        background-color: #f4f4f4;
+        /* 添加背景颜色渐变 */
+        background: linear-gradient(to right, #74ebd5, #acb6e5);
         color: #333;
+        text-align: center; /* 居中文本 */
     }
 
     .navbar {
@@ -35,19 +37,22 @@
 
     .member-info {
         max-width: 800px;
-        margin: 20px auto;
+        margin: 40px auto; /* 增加顶部和底部边距 */
         padding: 20px;
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px; /* 添加圆角 */
     }
 
     .member-info img {
-        max-width: 100%;
+        max-width: 200px; /* 设置图片最大宽度 */
         height: auto;
+        border-radius: 50%; /* 圆形图片 */
+        margin-top: 20px; /* 图片顶部边距 */
     }
 
-    .member-info h2 {
-        margin-top: 0;
+    .member-info h2, .member-info p {
+        margin: 10px 0; /* 增加段落间距 */
     }
 </style>
 </head>
