@@ -20,7 +20,7 @@
         overflow: hidden;
     }
 
-    .navbar a {
+    .navbar a, .dropdown-content a {
         display: block;
         color: #fff;
         text-align: center;
@@ -29,11 +29,10 @@
         transition: background 0.3s, color 0.3s;
     }
 
-    .navbar a:hover {
+    .navbar a:hover, .dropdown-content a:hover {
         background-color: #555;
     }
 
-    /* 下拉菜单的样式 */
     .dropdown {
         position: relative;
         display: inline-block;
@@ -44,12 +43,10 @@
         position: absolute;
         background-color: #000;
         min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
     }
 
     .dropdown-content a {
-        color: white;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
@@ -58,10 +55,6 @@
 
     .dropdown:hover .dropdown-content {
         display: block;
-    }
-
-    .dropdown-content a:hover {
-        background-color: #555;
     }
 
     .hero-image {
@@ -94,7 +87,7 @@
 <div class="navbar">
   <a href="#teamIntro">团队介绍</a>
   <div class="dropdown">
-    <a class="dropbtn">团队成员介绍</a>
+    <a href="javascript:void(0)" class="dropbtn">团队成员介绍</a>
     <div class="dropdown-content">
       <a href="member1.html">团队成员1</a>
       <a href="member2.html">团队成员2</a>
