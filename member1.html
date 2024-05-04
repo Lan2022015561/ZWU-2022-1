@@ -33,31 +33,21 @@
         background-color: #555;
     }
 
-    .profile-container {
-        width: 100%;
-        height: 100vh;
-        background: url('image/member1背景.jpg') no-repeat center center;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .profile-content {
-        max-width: 600px;
-        background: rgba(255, 255, 255, 0.8);
+    .member-info {
+        max-width: 800px;
+        margin: 20px auto;
         padding: 20px;
-        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    .profile-content h1 {
+    .member-info img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .member-info h2 {
         margin-top: 0;
-    }
-
-    .profile-description {
-        text-align: left;
-        margin-top: 20px;
     }
 </style>
 </head>
@@ -65,19 +55,21 @@
 
 <div class="navbar">
   <a href="index.html">首页</a>
-  <a href="teamIntro.html">团队介绍</a>
+  <a href="member2.html">团队成员2</a>
+  <a href="member3.html">团队成员3</a>
+  <a href="member4.html">团队成员4</a>
+  <a href="member5.html">团队成员5</a>
+  <a href="member6.html">团队成员6</a>
   <a href="coursePractice.html">课程实践</a>
   <a href="finalProject.html">期末项目</a>
 </div>
 
-<div class="profile-container">
-  <div class="profile-content">
-    <h1>团队成员1</h1>
-    <p class="profile-description">
-      这里是关于团队成员1的简介。您可以在这里添加个人介绍、专业技能、项目经验和其他相关信息。
-    </p>
-    <!-- 在这里添加更多内容 -->
-  </div>
+<div class="member-info">
+    <img src="image/10add63b19d640bcb11647bfcb07538.jpg" alt="团队成员1照片">
+    <h2>姓名：张三</h2>
+    <p>学号：1234567890</p>
+    <p>个人简介：张三是BSST团队的一员，专注于前端开发和用户体验设计。</p>
+    <p>擅长方面：HTML/CSS, JavaScript, React.js</p>
 </div>
 
 </body>
