@@ -22,6 +22,7 @@
         top: 0;
         width: 100%;
         z-index: 1000;
+        padding: 14px 0; /* Increased padding for larger spacing */
     }
 
     .navbar a {
@@ -39,18 +40,15 @@
 
     .main-title {
         text-align: center;
-        font-size: 3em; /* Increased font size */
-        font-weight: bold; /* Make the title bold */
-        padding: 10px 0; /* Reduced padding */
-        margin-top: 60px; /* Offset for the fixed navbar */
-        margin-bottom: 0; /* Reduced margin-bottom */
+        font-size: 3em;
+        font-weight: bold;
+        padding: 20px 0; /* Increased padding for larger spacing */
+        margin-top: 80px; /* Increased margin-top to push content down */
     }
 
     .content {
         padding: 20px;
-        padding-top: 100px; /* Reduced padding-top */
-        display: flex;
-        justify-content: center;
+        padding-top: 80px; /* Reduced padding-top to decrease spacing */
     }
 
     .section {
@@ -59,7 +57,7 @@
         padding: 20px;
         border-radius: 8px;
         width: 95%; /* Increased width */
-        max-width: 1200px; /* Optional: Set a max-width for very wide screens */
+        max-width: 1200px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
@@ -74,15 +72,15 @@
     .image-row {
         display: flex;
         justify-content: space-between;
-        align-items: center; /* Ensure images align vertically */
+        align-items: center;
         flex-wrap: wrap;
     }
 
     .image-row img {
-        width: auto; /* Adjust image width as needed */
-        max-width: 45%; /* Maximum width for images */
-        height: auto; /* Adjust image height as needed */
-        margin: 5px;
+        width: auto;
+        max-width: 45%; /* Adjust max-width as needed */
+        height: auto;
+        margin: 5px 10px; /* Adjusted margin to decrease space between images */
         border-radius: 8px;
     }
 </style>
