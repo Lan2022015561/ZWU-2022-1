@@ -1,42 +1,57 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>大学交互项目设计团队网站</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            color: #ffffff;
-            background-color: #1c1c1e;
-            margin: 0;
-            padding: 0;
-        }
-
         .navbar {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: #2c2c2e;
-            padding: 12px 0;
+            overflow: hidden;
+            background-color: #333;
         }
 
         .navbar a {
-            color: #ffffff;
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
             text-decoration: none;
-            padding: 8px 16px;
-            border-radius: 10px;
-            transition: background-color 0.3s ease;
+            font-size: 17px;
         }
 
         .navbar a:hover {
-            background-color: #3a3a3c;
-        }
-
-        .content {
-            padding: 20px;
-            text-align: center;
+            background: #ddd;
+            color: black;
         }
     </style>
 </head>
 <body>
+
+<div class="navbar">
+  <a href="#teamIntro">团队介绍</a>
+  <a href="#teamMembers">团队成员介绍</a>
+  <a href="#coursePractice">课程实践</a>
+  <a href="#finalProject">期末项目</a>
+</div>
+
+<div id="teamIntro">
+    <h1>团队介绍</h1>
+    <p>这里是团队介绍的内容。</p>
+</div>
+
+<div id="teamMembers">
+    <h1>团队成员介绍</h1>
+    <p>这里是团队成员介绍的内容。</p>
+</div>
+
+<div id="coursePractice">
+    <h1>课程实践</h1>
+    <p>这里是课程实践的内容。</p>
+</div>
+
+<div id="finalProject">
+    <h1>期末项目</h1>
+    <p>这里是期末项目的内容。</p>
+</div>
+
+</body>
+</html>
