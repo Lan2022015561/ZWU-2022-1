@@ -13,8 +13,8 @@
         color: #333;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        justify-content: center; /* 垂直居中 */
+        align-items: center; /* 水平居中 */
         text-align: center;
     }
 
@@ -45,24 +45,21 @@
     .member-info {
         width: 100%;
         max-width: 800px;
-        margin: auto;
         background-color: rgba(255, 255, 255, 0.9);
         padding: 50px;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        opacity: 0;
-        transform: translateY(20px);
         animation: fadeInUp 1s ease forwards;
         animation-delay: 0.5s;
         text-align: left;
     }
 
     .team-name {
-        font-size: 2em; /* 增大字号 */
-        font-weight: bold; /* 加粗 */
-        color: #000; /* 文字颜色改为黑色 */
-        margin-bottom: 40px; /* 增加与照片的间距 */
-        text-align: center; /* 文字居中 */
+        font-size: 2em;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 40px;
+        text-align: center;
     }
 
     .member-info img {
@@ -74,16 +71,16 @@
     }
 
     .member-info h2 {
-        font-weight: normal; /* 取消加粗 */
-        font-size: 0.9em; /* 缩小字号 */
+        font-weight: normal;
+        font-size: 0.9em;
         text-align: center;
     }
 
     .member-info p {
-        font-weight: normal; /* 取消加粗 */
+        font-weight: normal;
         text-align: left;
         margin-left: 20px;
-        line-height: 1.6; /* 增加行间距 */
+        line-height: 1.6;
     }
 
     .member-info p:before {
