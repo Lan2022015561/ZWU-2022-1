@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BSST团队网站</title>
-<link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet"> <!-- 引入书法风格字体 -->
 <style>
     body {
         margin: 0;
@@ -25,7 +24,7 @@
         display: block;
         color: #fff;
         text-align: center;
-        padding: 14px 20px;
+        padding: 14px 30px; /* 增加了左右的padding来增加间距 */
         text-decoration: none;
         transition: background 0.3s, color 0.3s;
     }
@@ -49,18 +48,9 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: white; /* 文字颜色改回白色 */
+        color: white;
         opacity: 0;
         animation: fadeIn 2s ease-in forwards;
-        font-family: 'Long Cang', cursive; /* 应用书法风格字体 */
-    }
-
-    .hero-text h1 {
-        font-size: 2em; /* 标题字号改回原样 */
-    }
-
-    .hero-text p {
-        font-size: 1em; /* 段落字号改回原样 */
     }
 
     @keyframes fadeIn {
