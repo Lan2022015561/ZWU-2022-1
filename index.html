@@ -7,7 +7,7 @@
 <style>
     body {
         margin: 0;
-        font-family: Arial, sans-serif;
+        font-family: 'Arial', sans-serif;
         background-color: #333;
         color: #fff;
     }
@@ -24,7 +24,7 @@
         display: block;
         color: #fff;
         text-align: center;
-        padding: 14px 20px;
+        padding: 14px 30px; /* 增加了左右的padding来增加间距 */
         text-decoration: none;
         transition: background 0.3s, color 0.3s;
     }
@@ -37,7 +37,7 @@
     .hero-image {
         width: 100%;
         height: 90vh;
-        background: url(image/3ae6929004455ca834f9455413f6040.png) no-repeat center center;
+        background: url(image/首页图片.jpg) no-repeat center center;
         background-size: cover;
         position: relative;
     }
@@ -49,16 +49,24 @@
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
+        opacity: 0;
+        animation: fadeIn 2s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
     }
 </style>
 </head>
 <body>
 
 <div class="navbar">
-  <a href="member1.html">团队介绍</a>
-  <a href="member2.html">团队成员介绍</a>
-  <a href="course_practice.html">课程实践</a>
-  <a href="final_project.html">期末项目</a>
+  <a href="#teamIntro">团队介绍</a>
+  <a href="#teamMembers">团队成员介绍</a>
+  <a href="#coursePractice">课程实践</a>
+  <a href="#finalProject">期末项目</a>
 </div>
 
 <div class="hero-image">
