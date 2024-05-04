@@ -5,27 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>团队成员1 - BSST团队网站</title>
 <style>
-    body {
+    body, html {
+        height: 100%;
         margin: 0;
         font-family: 'Arial', sans-serif;
-        /* 添加背景颜色渐变 */
         background: linear-gradient(to bottom, #74ebd5, #acb6e5);
         color: #333;
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 
     .navbar {
-        position: absolute;
+        position: fixed;
         top: 0;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #000;
+        z-index: 1000;
     }
 
     .navbar a {
@@ -42,37 +43,35 @@
     }
 
     .member-info {
-        max-width: 300px;
-        padding: 20px;
+        width: 80%;
+        max-width: 400px;
+        margin: auto;
         background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
         border-radius: 10px;
-        text-align: center;
-        transition: transform 1.5s ease-out, opacity 1.5s ease-out;
-        transform: translateY(50px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s ease forwards;
+        animation-delay: 0.5s;
     }
 
     .member-info img {
-        max-width: 100%;
-        height: auto;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
         margin-bottom: 20px;
     }
 
-    .member-info h2 {
-        margin: 0;
-        color: #000;
-    }
-
-    /* 页面加载完成后开始动画 */
-    body.onload .member-info {
-        transform: translateY(0);
-        opacity: 1;
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 </style>
 </head>
-<body onload="document.body.classList.add('loaded')">
+<body>
 
 <div class="navbar">
   <a href="index.html">首页</a>
@@ -86,7 +85,7 @@
 </div>
 
 <div class="member-info">
-    <img src="image/10add63b19d640bcb11647bfcb07538.jpg" alt="团队成员1照片">
+    <img src="image/10add63b19d640bcb11647bfcb07538.jpg"团队成员1照片">
     <h2>姓名：张三</h2>
     <p>学号：1234567890</p>
     <p>个人简介：张三是BSST团队的一员，专注于前端开发和用户体验设计。</p>
