@@ -59,7 +59,12 @@
 
     .team-name {
         font-size: 2em; /* 增大字号 */
+        font-weight: bold; /* 加粗 */
         margin-bottom: 20px; /* 与照片间距 */
+        color: #fff; /* 文字颜色 */
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); /* 文字阴影 */
+        /* 3D效果 */
+        transform: perspective(500px) rotateY(10deg);
     }
 
     .member-info img {
@@ -76,7 +81,7 @@
     }
 
     .member-info p {
-        font-weight: bold;
+        font-weight: normal; /* 取消加粗 */
         text-align: left;
         margin-left: 20px;
         line-height: 1.6; /* 增加行间距 */
