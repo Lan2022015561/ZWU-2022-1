@@ -24,14 +24,44 @@
         display: block;
         color: #fff;
         text-align: center;
-        padding: 14px 30px; /* 增加了左右的padding来增加间距 */
+        padding: 14px 30px;
         text-decoration: none;
         transition: background 0.3s, color 0.3s;
     }
 
     .navbar a:hover {
         background-color: #555;
-        color: #fff;
+    }
+
+    /* 下拉菜单的样式 */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #000;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #555;
     }
 
     .hero-image {
@@ -49,7 +79,6 @@
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        opacity: 0;
         animation: fadeIn 2s ease-in forwards;
     }
 
@@ -64,7 +93,17 @@
 
 <div class="navbar">
   <a href="#teamIntro">团队介绍</a>
-  <a href="#teamMembers">团队成员介绍</a>
+  <div class="dropdown">
+    <a href="javascript:void(0)">团队成员介绍</a>
+    <div class="dropdown-content">
+      <a href="member1.html">团队成员1</a>
+      <a href="member2.html">团队成员2</a>
+      <a href="member3.html">团队成员3</a>
+      <a href="member4.html">团队成员4</a>
+      <a href="member5.html">团队成员5</a>
+      <a href="member6.html">团队成员6</a>
+    </div>
+  </div>
   <a href="#coursePractice">课程实践</a>
   <a href="#finalProject">期末项目</a>
 </div>
