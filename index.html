@@ -67,7 +67,7 @@
     .image-row {
         display: flex;
         justify-content: space-around;
-        align-items: center;
+        align-items: flex-start; /* Align images to the top of their container */
         flex-wrap: wrap;
     }
 
@@ -75,7 +75,8 @@
         width: auto;
         max-width: 45%;
         height: auto;
-        margin: 5px 5px;
+        margin-top: 5px; /* Adjust top margin to align images vertically */
+        margin-bottom: 5px; /* Adjust bottom margin to align images vertically */
         border-radius: 8px;
     }
 </style>
@@ -113,5 +114,20 @@
     <!-- Repeat similar structure for other sections -->
 </div>
 
+     <!-- Section 2 -->
+<div class="section">
+    <h3>团队成员邀请入库</h3>
+    <div class="image-row">
+        <img src="img/87597ebebbc09ba1e4bad06ac5059c5.png" alt="Image 1">
+        <img src="img/80e1417911de6636e4ae96bb627ac75.png" alt="Image 2">
+    </div>
+    <div class="image-row">
+        <img src="img/3ae6929004455ca834f9455413f6040.png" alt="Image 3">
+        <img src="path-to-your-image4.jpg" alt="Image 4">
+    </div>
+    <p>xxxxx。</p>
+</div>
+<!-- Repeat similar structure for other sections -->
+</div>
 </body>
 </html>
