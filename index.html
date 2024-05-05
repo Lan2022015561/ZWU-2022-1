@@ -14,7 +14,7 @@
 
     .navbar {
         display: flex;
-        justify-content: center;
+        justify-content: space-around; /* Provides even spacing between navigation items */
         align-items: center;
         background-color: #000;
         overflow: hidden;
@@ -22,14 +22,13 @@
         top: 0;
         width: 100%;
         z-index: 1000;
-        padding: 14px 0; /* Increased padding for larger spacing */
+        padding: 14px 0;
     }
 
     .navbar a {
-        display: block;
         color: #fff;
         text-align: center;
-        padding: 14px 16px;
+        padding: 14px 30px; /* Increased padding to add more space between menu items */
         text-decoration: none;
         transition: background 0.3s, color 0.3s;
     }
@@ -42,22 +41,22 @@
         text-align: center;
         font-size: 3em;
         font-weight: bold;
-        padding: 20px 0; /* Increased padding for larger spacing */
-        margin-top: 80px; /* Increased margin-top to push content down */
+        padding: 20px 0;
+        margin-top: 80px; /* Adjusted to ensure enough space below the fixed navbar */
     }
 
     .content {
         padding: 20px;
-        padding-top: 80px; /* Reduced padding-top to decrease spacing */
+        padding-top: 100px; /* Adjusted to ensure enough space below the main title */
     }
 
     .section {
         background-color: rgba(68, 68, 68, 0.9);
-        margin: 10px auto; /* Reduced margin for tighter layout */
+        margin: 10px auto;
         padding: 20px;
         border-radius: 8px;
-        width: 95%; /* Increased width */
-        max-width: 1200px;
+        width: 95%; /* Adjusted for a wider content area */
+        max-width: 1200px; /* Maximum width to prevent overly wide sections on large screens */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
@@ -71,16 +70,16 @@
 
     .image-row {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around; /* Adjusted for more space between images */
         align-items: center;
         flex-wrap: wrap;
     }
 
     .image-row img {
         width: auto;
-        max-width: 45%; /* Adjust max-width as needed */
+        max-width: 45%; /* Adjusted to control image size */
         height: auto;
-        margin: 5px 10px; /* Adjusted margin to decrease space between images */
+        margin: 5px 5px; /* Adjusted to reduce space between images */
         border-radius: 8px;
     }
 </style>
@@ -105,14 +104,14 @@
     <div class="section">
         <h3>团队创建</h3>
         <div class="image-row">
-            <img src="image/3ae6929004455ca834f9455413f6040.png" alt="Image 1">
-            <img src="image/3ae6929004455ca834f9455413f6040.png" alt="Image 2">
+            <img src="img/87597ebebbc09ba1e4bad06ac5059c5.png" alt="Image 1">
+            <img src="img/80e1417911de6636e4ae96bb627ac75.png" alt="Image 2">
         </div>
         <div class="image-row">
-            <img src="image/3ae6929004455ca834f9455413f6040.png" alt="Image 3">
+            <img src="img/3ae6929004455ca834f9455413f6040.png" alt="Image 3">
             <img src="path-to-your-image4.jpg" alt="Image 4">
         </div>
-        <p>描述团队创建的过程和目的。</p>
+        <p>xxxxx。</p>
     </div>
     <!-- Repeat similar structure for other sections -->
 </div>
